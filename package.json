@@ -11,7 +11,7 @@
     "start": "node server-dist/server.js"
   },
   "dependencies": {
-    "pdfjs-dist": "^5.4.394",
+    "pdfjs-dist": "^6.2.108",
     "react": "^19.3.0",
     "react-dom": "^19.3.0"
   },
