@@ -1,0 +1,28 @@
+{
+  "name": "matcha-ats",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20.19.0" },
+  "scripts": {
+    "dev": "concurrently --kill-others-on-fail \"tsx server.ts\" \"vite --host 127.0.0.1\"",
+    "build": "tsc -b && tsc -p tsconfig.server.json && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "start": "node server-dist/server.js"
+  },
+  "dependencies": {
+    "pdfjs-dist": "^5.4.394",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^6.0.0",
+    "concurrently": "^9.2.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vite": "^8.0.0"
+  }
+}
